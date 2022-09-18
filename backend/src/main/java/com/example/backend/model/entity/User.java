@@ -12,9 +12,8 @@ import java.io.Serializable;
 
 /**
  * @author gtn
- *
  */
-@Entity
+@Entity(name = "usertb")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -24,8 +23,8 @@ public class User extends KorumEntity implements Serializable {
     @Column(nullable = false, columnDefinition = "VARCHAR(20)")
     private String username;
 
-    @Column(nullable = false, columnDefinition = "VARCHAR(20)")
-    private String name;
+    @Column(name = "fullname", nullable = false, columnDefinition = "VARCHAR(20)")
+    private String fullName;
 
     @Override
     public int hashCode() {

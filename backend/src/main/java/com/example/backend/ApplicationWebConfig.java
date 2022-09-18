@@ -34,6 +34,6 @@ public class ApplicationWebConfig extends SpringBootServletInitializer implement
                 .allowedOrigins("*")
                 .allowedMethods("*")
                 .allowedHeaders("*")
-                .allowCredentials(true);
+                .allowCredentials(false);
     }
 }
